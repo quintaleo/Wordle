@@ -1,0 +1,48 @@
+@import url(cabecalho/cabecalho.css);
+
+@import url(cabecalho/cabecalho__mensagem-botao.css);
+@import url(cabecalho/mensagem.css);
+
+@import url(principal/principal__container.css);
+
+
+@import url(principal/link-refresh.css);
+
+@import url(principal/tentativas/resposta-letra.css);
+@import url(principal/tentativas/tentativas.css);
+@import url(principal/tentativas/linha.css);
+
+@import url(principal/teclado-virtual/teclado-virtual.css);
+@import url(principal/teclado-virtual/teclado__linha.css);
+@import url(principal/teclado-virtual/teclado__tecla.css);
+
+:root {
+
+    --amararelo-principal: #F9FF00;
+    --branco-fonte: #FFFFFF;
+    --botao-bg-amarelo: #B59F3B;
+    --botao-bg-cinza: #585858;
+    --botao-bg-cinza-claro: #818384;
+    --botao-bg-verde: #538D4E;
+    --cinza-logo: #2F2D2D;
+    --fonte-principal: 'Inter', sans-serif;
+    --fundo-erro: #BA4747;
+    --fundo-tecla: #818384;
+    --mensagem-erro: #5F0F1D;
+    --mensagem-erro-amarelo: #7D6B15;
+    --mensagem-erro-bd-amarelo: #B59F3B;
+    --preto-padrao: #14161C;
+
+    --fonte-tamanho-padrao: 1.375rem;
+}
+
+body{
+
+    color: var(--branco-fonte);
+    background-color: var(--preto-padrao);
+    font-size: var(--fonte-tamanho-padrao);
+    font-family: var(--fonte-principal);
+
+    width: 100vw;
+    height: 80vh;
+}

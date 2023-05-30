@@ -1,0 +1,13 @@
+.resposta-letra {
+    
+    display: flex;
+    font-size: 2.25rem;
+    min-height: 3.75rem;
+    min-width: 3.75rem;
+    
+    align-items: center;
+    justify-content: center;
+    
+    background-color: var(--preto-padrao);
+    border: 1px solid var(--botao-bg-cinza);
+}

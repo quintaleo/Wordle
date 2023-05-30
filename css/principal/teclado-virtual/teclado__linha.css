@@ -1,0 +1,5 @@
+.teclado__linha {
+
+    display: flex;
+    gap: .25rem;
+}

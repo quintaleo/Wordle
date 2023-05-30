@@ -1,0 +1,7 @@
+.teclado-virtual {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .25rem;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Wordle</title>
+
+</head>
+
+<body>
+    
+    <header class="cabecalho">
+
+        <a class="link-inicio" href="index.html"><img src="/assets/img/Logologo.svg" alt="Logo do Wordle"></a>
+        
+        <div class="cabecalho__mensagem-botao">
+
+            <div class="mensagem" id="tentativasMensagem">Preencha todas as letras e tecle/clique ENTER para adivinhar a palavra</div>
+            <a href="index.html" class="link-refresh" id="linkRefresh">Jogar novamente</a>
+            
+        </div>
+
+    </header>
+
+    <main class="principal__container">
+
+        <section class="tentativas">
+
+            <div class="linha linha--1" id="respostaLinha1">
+
+                <div class="resposta-letra resposta-letra--1"></div>            
+                <div class="resposta-letra resposta-letra--2"></div>
+                <div class="resposta-letra resposta-letra--3"></div>           
+                <div class="resposta-letra resposta-letra--4"></div>
+                <div class="resposta-letra resposta-letra--5"></div>
+
+            </div>
+
+            <div class="linha linha--2" id="respostaLinha2">
+
+                <div class="resposta-letra resposta-letra--1"></div>                
+                <div class="resposta-letra resposta-letra--2"></div>
+                <div class="resposta-letra resposta-letra--3"></div>                
+                <div class="resposta-letra resposta-letra--4"></div>
+                <div class="resposta-letra resposta-letra--5"></div>
+
+            </div>
+
+            <div class="linha linha--3" id="respostaLinha3">
+
+                <div class="resposta-letra resposta-letra--1"></div>                
+                <div class="resposta-letra resposta-letra--2"></div>
+                <div class="resposta-letra resposta-letra--3"></div>                
+                <div class="resposta-letra resposta-letra--4"></div>
+                <div class="resposta-letra resposta-letra--5"></div>
+
+            </div>
+
+            <div class="linha linha--4" id="respostaLinha4">
+
+                <div class="resposta-letra resposta-letra--1"></div>                
+                <div class="resposta-letra resposta-letra--2"></div>
+                <div class="resposta-letra resposta-letra--3"></div>                
+                <div class="resposta-letra resposta-letra--4"></div>
+                <div class="resposta-letra resposta-letra--5"></div>
+
+            </div>
+
+            <div class="linha linha--5" id="respostaLinha5">
+
+                <div class="resposta-letra resposta-letra--1"></div>                
+                <div class="resposta-letra resposta-letra--2"></div>
+                <div class="resposta-letra resposta-letra--3"></div>                
+                <div class="resposta-letra resposta-letra--4"></div>
+                <div class="resposta-letra resposta-letra--5"></div>
+
+            </div>
+
+            <div class="linha linha--6" id="respostaLinha6">
+
+                <div class="resposta-letra resposta-letra--1"></div>                
+                <div class="resposta-letra resposta-letra--2"></div>
+                <div class="resposta-letra resposta-letra--3"></div>               
+                <div class="resposta-letra resposta-letra--4"></div>
+                <div class="resposta-letra resposta-letra--5"></div>
+
+            </div>
+            
+        </section>
+
+        <section class="teclado-virtual">
+
+            <div class="teclado__linha">
+
+                <button class="teclado__tecla" id="teclaLetra" value="Q">Q</button>
+                <button class="teclado__tecla" id="teclaLetra" value="W">W</button>
+                <button class="teclado__tecla" id="teclaLetra" value="E">E</button>
+                <button class="teclado__tecla" id="teclaLetra" value="R">R</button>
+                <button class="teclado__tecla" id="teclaLetra" value="T">T</button>
+                <button class="teclado__tecla" id="teclaLetra" value="Y">Y</button>
+                <button class="teclado__tecla" id="teclaLetra" value="U">U</button>
+                <button class="teclado__tecla" id="teclaLetra" value="I">I</button>
+                <button class="teclado__tecla" id="teclaLetra" value="O">O</button>
+                <button class="teclado__tecla" id="teclaLetra" value="P">P</button>
+
+            </div>
+
+            <div class="teclado__linha">
+
+                <button class="teclado__tecla" id="teclaLetra" value="A">A</button>
+                <button class="teclado__tecla" id="teclaLetra" value="S">S</button>
+                <button class="teclado__tecla" id="teclaLetra" value="D">D</button>
+                <button class="teclado__tecla" id="teclaLetra" value="F">F</button>
+                <button class="teclado__tecla" id="teclaLetra" value="G">G</button>
+                <button class="teclado__tecla" id="teclaLetra" value="H">H</button>
+                <button class="teclado__tecla" id="teclaLetra" value="J">J</button>
+                <button class="teclado__tecla" id="teclaLetra" value="K">K</button>
+                <button class="teclado__tecla" id="teclaLetra" value="L">L</button>
+
+            </div>
+
+            <div class="teclado__linha">
+
+                <button class="teclado__tecla" id="teclaEnter" value="Enter">ENTER</button>
+                <button class="teclado__tecla" id="teclaLetra" value="Z">Z</button>
+                <button class="teclado__tecla" id="teclaLetra" value="X">X</button>
+                <button class="teclado__tecla" id="teclaLetra" value="C">C</button>
+                <button class="teclado__tecla" id="teclaLetra" value="V">V</button>
+                <button class="teclado__tecla" id="teclaLetra" value="B">B</button>
+                <button class="teclado__tecla" id="teclaLetra" value="N">N</button>
+                <button class="teclado__tecla" id="teclaLetra" value="M">M</button>
+                <button class="teclado__tecla" id="teclaBackspace" value="Backspace">⌫</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script/script.js" type="module"></script>
+</body>
+
+</html>
