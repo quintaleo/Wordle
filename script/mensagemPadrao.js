@@ -36,7 +36,7 @@ export default function mensagemPadrao (tipo, palavraSorteada = null) {
 
     if (tipo === 5){ /* a palavra não consta no banco de palavras */
 
-        mensagem.innerHTML = "Sua palavra não corresponde a uma palavra do nosso banco, tente outra";
+        mensagem.innerHTML = "Sua palavra não corresponde a uma palavra do nosso banco de palavras, tente outra";
         mensagem.style.backgroundColor = "var(--fundo-erro)";
         mensagem.style.color = "var(--mensagem-erro)";
         return;
